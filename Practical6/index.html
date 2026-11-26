@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WanderGo Travels</title>
+</head>
+<body>
+
+    <h1>WanderGo Travels</h1>
+    <p id="offer">Special Offer: 20% off on travel packages!</p>
+
+    <h3>Select Destination</h3>
+    <select id="place" onchange="savePlace()">
+        <option value="Goa">Goa</option>
+        <option value="Manali">Manali</option>
+        <option value="Jaipur">Jaipur</option>
+    </select>
+
+    <button onclick="loadPackages()">View Packages</button>
+    <p id="result"></p>
+    <p id="message"></p>
+<script src="script.js"></script>    
+</body>
+</html>    
