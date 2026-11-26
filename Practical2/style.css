@@ -1,0 +1,317 @@
+
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #F5F1E6;
+    color: #354435;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #294936;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+header h3 {
+    color: #D8E6CF;
+    margin: 5px;
+}
+
+header p {
+    color: #E5EBDD;
+    margin: 5px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: #8BA888;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #203B2B;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 8px;
+}
+
+nav a:hover {
+    background-color: #294936;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+section,
+article,
+aside {
+    background-color: #FFFEFA;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #294936;
+    border-bottom: 2px solid #B7C9A8;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #607D55;
+}
+
+
+/* =========================
+   HOME SECTION
+========================= */
+
+#home {
+    text-align: center;
+    background-color: #E6EDDF;
+}
+
+#home img {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   PRODUCTS TABLE
+========================= */
+
+#products table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#products th,
+#products td {
+    border: 1px solid #C5D1B9;
+    padding: 12px;
+    text-align: center;
+}
+
+#products th {
+    background-color: #294936;
+    color: white;
+}
+
+#products tr:nth-child(even) {
+    background-color: #F0F4E9;
+}
+
+#products tr:hover {
+    background-color: #E3EBDD;
+}
+
+#products img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+#services li {
+    padding: 5px;
+}
+
+
+/* =========================
+   SPECIAL OFFER
+========================= */
+
+aside {
+    text-align: center;
+    background-color: #E6EDDF;
+    border: 2px solid #A8BC9A;
+}
+
+aside h2 {
+    color: #294936;
+}
+
+aside h3 {
+    color: #607D55;
+}
+
+
+/* =========================
+   CONTACT INFORMATION
+========================= */
+
+#contact table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#contact th,
+#contact td {
+    border: 1px solid #B7C9A8;
+    padding: 12px;
+    text-align: left;
+}
+
+#contact th {
+    background-color: #E6EDDF;
+    color: #294936;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+form {
+    max-width: 600px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #A8B69F;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFEFA;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #8BA888;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+    background-color: #294936;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #607D55;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #294936;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer h3 {
+    color: #D8E6CF;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section,
+    article,
+    aside {
+        padding: 15px;
+    }
+
+    #home img {
+        width: 100%;
+    }
+
+    #products {
+        overflow-x: auto;
+    }
+
+    #products table {
+        min-width: 600px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+}
